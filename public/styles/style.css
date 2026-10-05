@@ -1,0 +1,207 @@
+@import "tailwindcss";
+
+/* Make hover: classes work everywhere (Tailwind v4 normally turns them off on touch / emulated-mobile screens) */
+@custom-variant hover (&:hover);
+
+/* Make Tailwind's screen sizes match yours:
+   sm = 481px, md = 768px (default), lg = 1024px (default),
+   xl = 1280px (default), 2xl = 1920px */
+@theme {
+  --breakpoint-sm: 481px;
+  --breakpoint-2xl: 1920px;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  background-color: white;
+}
+
+.unbounded-font {
+  font-family: "Unbounded", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.heroHeading {
+  color: #131c15;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+
+.pageNavigation:hover {
+  background-color: #50e7f87d;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.bigButton:hover .bigButtonDiv {
+  border: solid 1.3px #50e7f8;
+}
+
+.bigButton:hover .bigButtonDiv i {
+  animation: rotateOnce 0.5s ease forwards; /* runs once, then stops */
+}
+
+/* (the second, identical copy of this was removed - one is enough) */
+@keyframes rotateOnce {
+  from {
+    transform: rotate(0deg); /* your starting angle */
+  }
+  to {
+    transform: rotate(44deg); /* final angle pointing right → */
+  }
+}
+
+.bigButton {
+  background: linear-gradient(to right, #50e7f8 0%, #ffffff 100%);
+  background-size: 200% 100%;
+  background-position: left center;
+  transition: background-position 0.3s ease;
+}
+
+.bigButton:hover {
+  background-position: right center;
+  border: solid 1.4px black;
+}
+
+body { display: block; }
+#root { max-width: none; padding: 0; text-align: left; }
+
+/* claude */
+
+.reviewCard{
+  border: solid white 1px;
+  margin-bottom: 15px;
+  min-height: 10rem;
+  border: solid black 1px;
+}
+
+.reviewCard:hover{
+  scale: 1.01;
+  background-color: #f1f6f7;
+}
+
+.serviceCard{
+  border: solid white 1px;
+  margin: 5px;
+  min-height: 13rem;
+}
+
+.serviceCard:hover{
+  background-color: #50e7f8;
+  border: solid black 1px;
+  cursor: pointer;
+}
+
+.choose{
+  border: solid 2px #d5dbe6c4;
+  border-radius: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wtf{
+  font-family: "Unbounded", sans-serif;
+  color: black;
+  display: flex;
+  align-items: start;
+  margin-bottom: 1.4rem;
+}
+
+.wtf2{
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 540;
+}
+
+.ugh{
+  margin-bottom: 1.7rem;
+  font-weight: bold;
+}
+
+.ugh2{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-left: 0.7rem;
+  color: black;
+}
+
+/* No fixed height and no padding-bottom here any more:
+   the banner grows with its content, spacing lives in BookPage.jsx (py-8 sm:py-10) */
+.bookPage {
+  background-image: url("/assets/pageimg.jpg");
+  width: 95%;
+  min-height: 15rem;
+  background-size: cover;
+}
+
+.ytf{
+  color: black;
+}
+
+
+.bigButton1:hover .bigButton1Div {
+  border: solid 1.3px #50e7f8;
+}
+
+.bigButton1:hover .bigButton1Div i {
+  animation: rotateOnce 0.5s ease forwards; /* runs once, then stops */
+
+}
+
+.bigButton1 {
+  background: linear-gradient(to right, #ffffff 0%, #000 100%);
+  background-size: 200% 100%;
+  background-position: left center;
+  transition: background-position 0.3s ease;
+}
+
+.bigButton1:hover {
+  background-position: right center;
+  border: solid 1.4px black;
+  color: white
+}
+
+.serviceImage {
+  border: solid 1px black;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wttf {
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  margin-top: 0.5rem;
+}
+
+.bekarDiv{
+  border: solid 1px black;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  background-color: #f1f6f7;
+  margin: auto;
+  margin-bottom: 3rem;
+}
+
+.bekarHead{
+  color: black;
+  font-family: "Unbounded", sans-serif;
+  margin-bottom: 2.3rem;
+}
+
+.bekarPara{
+  color: rgba(0, 0, 0, 0.557);
+  margin-bottom: 0.5rem;
+  margin-top: 3rem;
+}
+
+.links:hover{
+  color: black;
+}
