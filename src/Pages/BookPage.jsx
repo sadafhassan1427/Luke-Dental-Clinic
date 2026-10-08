@@ -1,48 +1,5 @@
-// export default function BookPage() {
-//     return (
-//         <div className="bookPage flex flex-col items-start pl-10 rounded-4xl w-70 h-80 mt-1" id="bookPage">
-//             <h1 className="unbounded-font font-bold ytf">Your Perfect Smile</h1>
-//             <p className="text-black font-semibold pl-3"> in Minutes</p>
-//             <p className="text-black pl-3 pt-3">Want a brighter smile? Schedule your visit today!</p>
-//              <div className="flex flex-row mt-5 w-70 text-black bg-white rounded-4xl font-bold  pl-7 py-2 mb-6 bigButton1">
-//                 <h4>Book Now</h4>
-//                 {/* <button className="flex w-70 text-black bg-white rounded-4xl font-bold py-2 px-4">Book Now</button> */}
-//                 <div className="bg-white rounded-4xl w-7 h-7 ml-18 flex justify-center items-center bigButton1Div">
-//                     <i className="fa-solid fa-arrow-right-long text-black transform rotate-315  "></i>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-
-
-
-
-
-
-// export default function BookPage() {
-//     return (
-//         <div className="bookPage flex flex-col items-start pl-5 pr-4 sm:pl-10 rounded-4xl mt-1" id="bookPage">
-//             <h1 className="unbounded-font font-bold ytf mt-6 sm:mt-12 text-xl sm:text-3xl lg:text-[2.5rem]">Your Perfect Smile</h1>
-//             <p className="text-black font-semibold pl-3 text-sm sm:text-base"> in Minutes</p>
-//             <p className="text-black pl-3 pt-3 text-sm sm:text-base">Want a brighter smile? Schedule your visit today!</p>
-//              <div className="flex flex-row mt-5 w-full max-w-70 text-black bg-white rounded-4xl font-bold  pl-7 py-2 mb-6 bigButton1">
-//                 <h4>Book Now</h4>
-//                 {/* <button className="flex w-70 text-black bg-white rounded-4xl font-bold py-2 px-4">Book Now</button> */}
-//                 <div className="bg-white rounded-4xl w-7 h-7 ml-18 flex justify-center items-center bigButton1Div">
-//                     <i className="fa-solid fa-arrow-right-long text-black transform rotate-315  "></i>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// };
-
-
-
 export default function BookPage() {
     return (
-        // justify-center + py-* = the content sits in the middle with breathing room above AND below
         <div className="bookPage flex flex-col items-start justify-center pl-5 pr-4 py-8 sm:pl-10 sm:py-10 rounded-4xl mt-1" id="bookPage">
             <h1 className="unbounded-font font-bold ytf text-lg sm:text-3xl md:text-4xl lg:text-[2.5rem]">Your Perfect Smile</h1>
             <p className="text-black font-semibold pl-3 text-xs sm:text-base"> in Minutes</p>
